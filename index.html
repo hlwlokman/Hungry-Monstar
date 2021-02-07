@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- header part started -->
+        <nav class="container navbar navbar-expand-lg navbar-light pt-2">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">Hungry Monstar</a>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link mx-1" href="#">Home</a>
+                        <a class="nav-link mx-1" href="#">About</a>
+                        <a class="nav-link mx-1" href="#">Recipes</a>
+                        <a class="nav-link mx-1" href="#">blog</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container">
+            <div class="col-10  col-md-8 col-lg-7 col-xl-6 m-auto pt-1 pb-2">
+                <div class="input-group mb-1">
+                    <input id="input-meal-name" type="text" required class="form-control" placeholder="Search for meal">
+                    <div class="input-group-append">
+                        <button id="search-btn" type="button" class="btn">Search</button>
+                    </div>
+                </div>
+
+                
+                <div style="height: 30px;margin-bottom: 10px;">
+                    <p id="warning-text"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <div id="meal-details" class="container">
+            <div id="meal-details-display" class="row row-cols-1  row-cols-md-2 g-1">
+               
+            </div>
+            <div id="instruction-display">
+                
+            </div>
+        </div>
+
+        
+        <div class="meal-container mb-5">
+            <div id="meal-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
